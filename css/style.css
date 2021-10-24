@@ -277,8 +277,126 @@ body {
 	background: #fffdbf;
 }
 .tag-parents {
-	background: #F6FDC8;
+	background: #f6fdc8;
 }
 .tag-festive {
-	background: #FEF7FE;
+	background: #fef7fe;
+}
+.section-grey {
+	background: #f6f6f6;
+}
+.category {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+.tabs {
+	display: flex;
+	margin: 0;
+	margin-bottom: 62px;
+	padding: 0;
+	list-style-type: none;
+}
+.tabs-link {
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	text-decoration: none;
+	color: #49494f;
+	margin-right: 58px;
+}
+.tabs-link.active {
+	color: #f37321;
+}
+.tabs-content {
+	display: flex;
+	margin: -18px;
+}
+.tabs-card {
+	max-width: 270px;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: #fff;
+	margin: 18px;
+}
+.tabs-image {
+	max-width: 100%;
+}
+.tabs-card-content {
+	padding: 23px;
+}
+.tabs-title {
+	margin-top: 0;
+	margin-bottom: 13px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+}
+.tabs-description {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 23px;
+	color: #b9b9be;
+}
+.tabs-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tabs-price {
+	font-weight: 500;
+	font-size: 23px;
+	line-height: 23px;
+	color: #4b4b51;
+	display: block;
+	margin-bottom: 5px;
+}
+.tabs-weight {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 20px;
+	color: #aaaab1;
+}
+.button-outline {
+	background-color: transparent;
+	cursor: pointer;
+	padding: 15px 25px;
+	border: 2px solid #f37321;
+	border-radius: 33px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #f37321;
+}
+.button-center {
+	display: block;
+	margin: auto;
+	margin-top: 60px;
+	width: 315px;
+}
+.footer {
+	background: #f6f6f6;
+	padding: 40px 0;
+}
+.footer-wrapper {
+	display: flex;
+	align-items: center;
+}
+.footer-logo {
+	margin-right: 50px;
+}
+.footer-link {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+	color: #000000;
+	margin-right: 50px;
+}
+.social-links {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.social-link {
+	margin-left: 20px;
+	text-decoration: none;
 }
