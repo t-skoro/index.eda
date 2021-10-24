@@ -58,7 +58,7 @@ body {
 	color: #000;
 }
 .shopping-cart {
-    position: relative;
+	position: relative;
 	width: 49px;
 	height: 49px;
 	border-radius: 50px;
@@ -67,17 +67,218 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-left: 30px;
-    text-decoration: none;
+	text-decoration: none;
 }
 .shopping-counter {
-    position: absolute;
+	position: absolute;
 	background: #ffaf19;
 	font-size: 8px;
 	line-height: 9px;
 	color: #000;
-    display: block;
-    padding: 5px;
-    border-radius: 50%;
-    right: 0;
-    bottom: 0;
+	display: block;
+	padding: 5px;
+	border-radius: 50%;
+	right: 0;
+	bottom: 0;
+}
+.slide {
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	padding: 100px;
+}
+.slide-text-light {
+	background-color: #ccc;
+	color: #fff;
+}
+.slide-content {
+	max-width: 400px;
+	position: relative;
+}
+.slide-title {
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 51px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.slide-text {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 30px;
+}
+.button-primary {
+	background: #f47322;
+	color: #fff;
+}
+.button-default {
+	background-color: #fff;
+	color: #5f5f61;
+}
+.button {
+	border-radius: 25px;
+	padding: 12px 50px;
+	display: inline-block;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 23px;
+}
+.slide-summer {
+	background-image: url(../img/summer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.slide::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.43) 40.45%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+.promo {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin: -20px;
+}
+.card {
+	/* flex-grow: 2; */
+	flex: 50%;
+	margin: 20px;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 32px;
+	max-width: 570px;
+	min-height: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.card::before {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.card-text-light {
+	color: #fff;
+}
+.card-title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+	margin-top: 4px;
+	margin-bottom: 21px;
+}
+.card-description {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+	max-width: 200px;
+}
+.card-price {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 23px;
+	display: block; /*займёт всю строчку*/
+	margin-bottom: 8px;
+}
+.card-delivery {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 23px;
+	display: block;
+	margin-bottom: 25px;
+}
+.card-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	object-fit: cover; /*чтобы картинка обрезалась если не подойдёт по размеру*/
+}
+.section-title {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 23px;
+	margin-top: 0;
+	margin-bottom: 47px;
+}
+.delivery-week {
+	padding: 100px 0;
+}
+.delivery-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -15px;
+}
+.delivery-card {
+	margin: 15px;
+	position: relative;
+	width: 275px;
+	height: 182px;
+	border-radius: 18px;
+	overflow: hidden;
+}
+.delivery-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.delivery-tag {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	border-radius: 30px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	color: #49494f;
+	padding: 5px 10px;
+}
+.tag-health {
+	background: #d0fd89;
+}
+.tag-vegetable {
+	background: #aebc41;
+}
+.tag-meat {
+	background: #b86b78;
+}
+.tag-bird {
+	background: #d68334;
+}
+.tag-fish {
+	background: #cd6255;
+}
+.tag-baby {
+	background: #fffdbf;
+}
+.tag-parents {
+	background: #F6FDC8;
+}
+.tag-festive {
+	background: #FEF7FE;
 }
