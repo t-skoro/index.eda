@@ -445,13 +445,16 @@ body {
 		flex: 50%;
 		max-width: calc(50% - 30px);
 	}
+	.slide {
+		padding: 70px;
+	}
 }
 @media (max-width: 992px) {
 	.container {
 		max-width: 750px;
 	}
 	.slide {
-		padding: 70px;
+		padding: 35px;
 	}
 	.delivery-card {
 		width: calc(50% - 30px);
